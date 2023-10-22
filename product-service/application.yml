@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rzy119:rzy1982@cluster0.b5zjast.mongodb.net/product-service
