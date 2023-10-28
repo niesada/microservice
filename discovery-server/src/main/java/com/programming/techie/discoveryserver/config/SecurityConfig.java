@@ -18,11 +18,6 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @EnableWebSecurity
 public class SecurityConfig {
 
-  @Value("${eureka.username}")
-  private String username;
-  @Value("${eureka.password}")
-  private String password;
-
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
     httpSecurity.csrf().ignoringRequestMatchers("/eureka/**");
