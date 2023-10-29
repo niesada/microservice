@@ -17,3 +17,9 @@ spring:
       password: password
   application:
     name: discovery-server
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
