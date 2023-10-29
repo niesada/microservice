@@ -1,7 +1,10 @@
-eurake:
+eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka:password@localhost:8761/eureka
+
+app:
+  eureka-server: localhost
 
 logging:
   level:
