@@ -110,8 +110,6 @@ services:
       - "8761:8761"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    depends_on:
-      - zipkin
 
   api-gateway:
     image: saiupadhyayula007/api-gateway:latest
@@ -151,7 +149,6 @@ services:
     depends_on:
       - postgres-order
       - broker
-      - zipkin
       - discovery-server
       - api-gateway
 
@@ -176,7 +173,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
-      - zipkin
       - broker
       - discovery-server
       - api-gateway
