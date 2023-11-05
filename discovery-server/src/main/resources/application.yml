@@ -23,3 +23,10 @@ logging:
     org:
       springframework:
         security: DEBUG
+
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus

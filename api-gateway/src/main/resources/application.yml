@@ -51,4 +51,9 @@ spring:
 #spring.cloud.gateway.routes[1].url=lb://order-service
 #spring.cloud.gateway.routes[1].predicates[0]=Path=l/api/order
 
-
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
