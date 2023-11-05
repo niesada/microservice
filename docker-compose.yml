@@ -145,7 +145,7 @@ services:
     pull_policy: always
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-order:5431/order-service
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-order:5431/order-service
     depends_on:
       - broker
       - discovery-server
@@ -159,7 +159,7 @@ services:
     pull_policy: always
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-inventory:5432/inventory-service
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-inventory:5432/inventory-service
     depends_on:
       - discovery-server
       - api-gateway

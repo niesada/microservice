@@ -2,22 +2,10 @@ server:
   port: 8080
 
 spring:
-  datasource:
-    url: jdbc:postgresql://postgres:5431/order_service
-    driver-class-name: org.postgresql.Driver
-    username: ptechie
-    password: password
-
-management:
-  zipkin:
-    tracing:
-      endpoint: http://zipkin:9411
+  kafka:
+    bootstrap-servers: broker:29092
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka
-
-spring:
-  kafka:
-    bootstrap-servers: broker:29092
