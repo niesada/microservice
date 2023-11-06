@@ -6,3 +6,6 @@ eureka:
 spring:
   kafka:
     bootstrap-servers: broker:29092
+
+server:
+  port: 8080

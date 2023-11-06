@@ -12,3 +12,10 @@ eureka:
 
 server:
   port: 0
+
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
